@@ -8,6 +8,8 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+  # Let paperclip know where to look for the utility
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
